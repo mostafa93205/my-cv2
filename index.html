@@ -4,163 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mostafa Emad Salah Hamdy - CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #003366, #004080, #336699); /* تدرج ألوان أزرق */
-            color: #fff;
+            background-color: #f2f2f2;
+            color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
-        /* Container Styling */
         .container {
-            position: relative;
-            max-width: 900px;
+            max-width: 800px;
             margin: 50px auto;
-            background-color: rgba(0, 0, 0, 0.75); /* خلفية داكنة معتمة */
+            background-color: #fff;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-
-        .container:hover {
-            transform: scale(1.03);
-            transition: transform 0.4s ease-in-out;
-        }
-
-        /* Glowing Border Animation */
-        .container::before {
-            content: "";
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, #00cfff, #00a3cc, #006699);
-            z-index: -1;
-            filter: blur(10px);
-            opacity: 0.7;
-            animation: borderGlow 5s infinite alternate;
-        }
-
-        @keyframes borderGlow {
-            0% { filter: blur(5px); }
-            100% { filter: blur(15px); }
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             text-align: center;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.8rem;
-            color: #00cfff; /* أزرق ساطع */
+            font-size: 2.2rem;
+            color: #333;
             margin-bottom: 20px;
+            font-weight: 700;
         }
 
         h2 {
-            font-size: 1.8rem;
-            color: #00a3cc; /* أزرق فاتح */
-            margin-bottom: 15px;
+            font-size: 1.6rem;
+            color: #004080;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
 
-        .info, .section {
+        .info {
             margin-bottom: 30px;
-            padding: 25px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
-            position: relative;
         }
 
-        .profile-img {
-            display: block;
-            margin: 0 auto 30px;
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border: 4px solid #00cfff;
-            transition: transform 0.4s ease;
+        .info p {
+            margin: 5px 0;
+            font-size: 1.1rem;
         }
 
-        .profile-img:hover {
-            transform: scale(1.2);
+        .section {
+            margin-bottom: 30px;
         }
 
-        /* Skills and Hobbies Lists */
+        .section p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
         .skills-list, .hobbies-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
-            justify-content: space-between;
+            gap: 10px;
         }
 
         .skills-list li, .hobbies-list li {
-            flex: 1 1 calc(48% - 10px);
-            padding: 15px;
-            background-color: rgba(255, 255, 255, 0.15);
-            color: #00cfff;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            flex: 1 1 45%;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 8px;
             text-align: center;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
-        .skills-list li:hover, .hobbies-list li:hover {
-            background-color: rgba(0, 255, 255, 0.2);
-            color: #ffffff;
-            transform: translateY(-5px);
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
-        }
-
-        /* Animation for Info Section */
-        .info {
-            animation: fadeInUp 1s ease-in-out;
-        }
-
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Footer */
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #00a3cc; /* خلفية زرقاء فاتحة */
+            background-color: #004080;
             color: #fff;
             font-weight: 700;
             border-radius: 0 0 12px 12px;
         }
 
-        footer p {
-            margin: 0;
-        }
-
-        /* Responsive Styling */
         @media (max-width: 768px) {
             .skills-list li, .hobbies-list li {
                 flex: 1 1 100%;
             }
 
             h1 {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
         }
     </style>
@@ -168,64 +99,63 @@
 <body>
 
     <div class="container">
-        <img src="profile-pic.png" alt="Mostafa's Profile Picture" class="profile-img">
-        <h1>Mostafa Emad Salah Hamdy 🚀</h1>
+        <h1>Mostafa Emad Salah Hamdy</h1>
         <div class="info">
-            <p>📍 Giza, Hadayek Al Ahram, Egypt</p>
-            <p>📧 mommm93205@gmail.com</p>
-            <p>📱 +201061014803</p>
-            <p>🎂 Born on 9 March 2005</p>
+            <p>Giza, Hadayek Al Ahram, Egypt</p>
+            <p>Email: mommm93205@gmail.com</p>
+            <p>Phone: +201061014803</p>
+            <p>Born: 9 March 2005</p>
         </div>
 
         <div class="section">
-            <h2>💼 Work Experience</h2>
-            <p>10/2023: Joined the Faculty of Health Sciences, Misr University for Science and Technology (MUST)</p>
+            <h2>Work Experience</h2>
+            <p>October 2023: Joined the Faculty of Health Sciences, Misr University for Science and Technology (MUST)</p>
         </div>
 
         <div class="section">
-            <h2>📜 Certificates & Courses</h2>
-            <p>📌 ISO 45001/2018 Safety Management System</p>
-            <p>📌 International Biotechnology Conference, Mast University</p>
-            <p>📌 Green Hydrogen & Ammonia Symposium (2024)</p>
-            <p>📌 Python 101, Line Platform</p>
-            <p>📌 Body Language & Business Etiquette, Almentor</p>
-            <p>📌 Digital Marketing, MUST (2024)</p>
+            <h2>Certificates & Courses</h2>
+            <p>ISO 45001/2018 Safety Management System</p>
+            <p>International Biotechnology Conference, Mast University</p>
+            <p>Green Hydrogen & Ammonia Symposium (2024)</p>
+            <p>Python 101, Line Platform</p>
+            <p>Body Language & Business Etiquette, Almentor</p>
+            <p>Digital Marketing, MUST (2024)</p>
         </div>
 
         <div class="section">
-            <h2>🌍 Languages</h2>
-            <p>🇪🇬 Arabic: Native</p>
-            <p>🇬🇧 English: B2 Level</p>
+            <h2>Languages</h2>
+            <p>Arabic: Native</p>
+            <p>English: B2 Level</p>
         </div>
 
         <div class="section">
-            <h2>💡 Skills</h2>
+            <h2>Skills</h2>
             <ul class="skills-list">
-                <li>🔧 Design & Management</li>
-                <li>👥 Teamwork & Leadership</li>
-                <li>💻 AI & Computer Technology</li>
-                <li>📈 Digital Marketing</li>
-                <li>🖼 Photoshop & Video Editing</li>
+                <li>Design & Management</li>
+                <li>Teamwork & Leadership</li>
+                <li>AI & Computer Technology</li>
+                <li>Digital Marketing</li>
+                <li>Photoshop & Video Editing</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>🎯 Hobbies & Interests</h2>
+            <h2>Hobbies & Interests</h2>
             <ul class="hobbies-list">
-                <li>💻 Digital Marketing</li>
-                <li>📊 Management</li>
-                <li>🎨 Photoshop</li>
-                <li>✂️ Video Editing</li>
-                <li>✈️ Travel</li>
-                <li>📖 Reading</li>
-                <li>🏊‍♂️ Swimming (fins)</li>
-                <li>🌿 Environmental Awareness</li>
+                <li>Digital Marketing</li>
+                <li>Management</li>
+                <li>Photoshop</li>
+                <li>Video Editing</li>
+                <li>Travel</li>
+                <li>Reading</li>
+                <li>Swimming (fins)</li>
+                <li>Environmental Awareness</li>
             </ul>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Mostafa Emad Salah Hamdy 🌟</p>
+        &copy; 2024 Mostafa Emad Salah Hamdy
     </footer>
 
 </body>
