@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mostafa Emad Salah Hamdy - CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
 
         .container {
@@ -26,73 +24,51 @@
 
         h1 {
             text-align: center;
-            font-size: 2.2rem;
-            color: #333;
+            font-size: 24px;
             margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 1.6rem;
-            color: #004080;
-            margin-bottom: 10px;
-            font-weight: 600;
         }
 
         .info {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .info p {
             margin: 5px 0;
-            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #004080;
+            margin-bottom: 10px;
         }
 
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .section p {
             margin: 5px 0;
-            font-size: 1rem;
         }
 
-        .skills-list, .hobbies-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        .skills-list li, .hobbies-list li {
-            flex: 1 1 45%;
+        ul li {
+            margin-bottom: 5px;
             background-color: #f5f5f5;
             padding: 10px;
             border-radius: 8px;
-            text-align: center;
-            font-weight: 600;
         }
 
         footer {
             text-align: center;
-            padding: 20px 0;
+            padding: 10px 0;
             background-color: #004080;
             color: #fff;
-            font-weight: 700;
+            font-weight: bold;
             border-radius: 0 0 12px 12px;
-        }
-
-        @media (max-width: 768px) {
-            .skills-list li, .hobbies-list li {
-                flex: 1 1 100%;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            h2 {
-                font-size: 1.4rem;
-            }
         }
     </style>
 </head>
@@ -104,7 +80,7 @@
             <p>Giza, Hadayek Al Ahram, Egypt</p>
             <p>Email: mommm93205@gmail.com</p>
             <p>Phone: +201061014803</p>
-            <p>Born: 9 March 2005</p>
+            <p>Date of Birth: 9 March 2005</p>
         </div>
 
         <div class="section">
@@ -114,12 +90,14 @@
 
         <div class="section">
             <h2>Certificates & Courses</h2>
-            <p>ISO 45001/2018 Safety Management System</p>
-            <p>International Biotechnology Conference, Mast University</p>
-            <p>Green Hydrogen & Ammonia Symposium (2024)</p>
-            <p>Python 101, Line Platform</p>
-            <p>Body Language & Business Etiquette, Almentor</p>
-            <p>Digital Marketing, MUST (2024)</p>
+            <ul>
+                <li>ISO 45001/2018 Safety Management System</li>
+                <li>International Biotechnology Conference, Mast University</li>
+                <li>Green Hydrogen & Ammonia Symposium (2024)</li>
+                <li>Python 101, Line Platform</li>
+                <li>Body Language & Business Etiquette, Almentor</li>
+                <li>Digital Marketing, MUST (2024)</li>
+            </ul>
         </div>
 
         <div class="section">
@@ -130,7 +108,7 @@
 
         <div class="section">
             <h2>Skills</h2>
-            <ul class="skills-list">
+            <ul>
                 <li>Design & Management</li>
                 <li>Teamwork & Leadership</li>
                 <li>AI & Computer Technology</li>
@@ -141,7 +119,7 @@
 
         <div class="section">
             <h2>Hobbies & Interests</h2>
-            <ul class="hobbies-list">
+            <ul>
                 <li>Digital Marketing</li>
                 <li>Management</li>
                 <li>Photoshop</li>
