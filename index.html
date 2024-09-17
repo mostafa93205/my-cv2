@@ -12,20 +12,46 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            color: #333;
         }
         .container {
             width: 80%;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
-        h1, h2 {
-            text-align: center;
+        .profile-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
-        p, li {
+        .profile-header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile-header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #007BFF;
+        }
+        .profile-header p {
+            margin: 5px 0;
             font-size: 16px;
-            color: #555;
+        }
+        h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            font-size: 20px;
+            color: #007BFF;
+            margin-top: 20px;
         }
         ul {
             list-style-type: none;
@@ -34,31 +60,15 @@
         li {
             margin: 5px 0;
         }
-        .btn-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .btn-container button {
-            padding: 10px 20px;
-            margin: 5px;
-            cursor: pointer;
-            border: none;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 5px;
-        }
-        .btn-container .extra-btn {
-            background-color: #28a745; /* لون مميز للزر الإضافي */
-        }
         .social-media {
             text-align: center;
             margin: 20px 0;
         }
         .social-media a {
-            margin: 0 10px;
+            margin: 0 15px;
             text-decoration: none;
             color: #007BFF;
-            font-size: 24px;
+            font-size: 30px;
         }
         .social-media a:hover {
             color: #0056b3;
@@ -67,12 +77,17 @@
 </head>
 <body>
 
-<div class="container" id="english-content">
-    <h1>Mostafa Emad Salah Hamdy</h1>
-    <p><strong>Address:</strong> Giza, Hadayek Al Ahram, Egypt</p>
-    <p><strong>E-Mail:</strong> mommm93205@gmail.com</p>
-    <p><strong>Phone:</strong> +201061014803</p>
-    <p><strong>Date of Birth:</strong> 9 March 2005</p>
+<div class="container">
+    <div class="profile-header">
+        <img src="profile-pic.png" alt="Mostafa Emad Salah Hamdy">
+        <div>
+            <h1>Mostafa Emad Salah Hamdy</h1>
+            <p><strong>Address:</strong> Giza, Hadayek Al Ahram, Egypt</p>
+            <p><strong>E-Mail:</strong> mommm93205@gmail.com</p>
+            <p><strong>Phone:</strong> +201061014803</p>
+            <p><strong>Date of Birth:</strong> 9 March 2005</p>
+        </div>
+    </div>
 
     <h2>Education</h2>
     <ul>
@@ -119,21 +134,15 @@
         <li>Swimming (fins)</li>
         <li>Environmental Pollution Awareness</li>
     </ul>
-</div>
 
-<div class="social-media">
     <h2>Connect with Me</h2>
-    <a href="https://www.facebook.com/mommm93205/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://discord.com/users/705851962851196962" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
-    <a href="https://www.instagram.com/lahn_alhout/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.threads.net/@lahn_alhout" target="_blank" title="Threads"><i class="fab fa-threads"></i></a>
+    <div class="social-media">
+        <a href="https://www.facebook.com/mommm93205/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://discord.com/users/705851962851196962" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+        <a href="https://www.instagram.com/lahn_alhout/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.threads.net/@lahn_alhout" target="_blank" title="Threads"><i class="fab fa-threads"></i></a>
+    </div>
 </div>
-
-<script>
-    function extraFunction() {
-        alert("Extra button clicked!"); // يمكنك تغيير هذه الوظيفة حسب الحاجة
-    }
-</script>
 
 </body>
 </html>
