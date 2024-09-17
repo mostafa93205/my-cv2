@@ -34,13 +34,6 @@
         li {
             margin: 5px 0;
         }
-        .hidden {
-            display: none;
-        }
-        .arabic {
-            direction: rtl;
-            text-align: right;
-        }
         .btn-container {
             text-align: center;
             margin: 20px 0;
@@ -73,12 +66,6 @@
     </style>
 </head>
 <body>
-
-<div class="btn-container">
-    <button onclick="showEnglish()">English</button>
-    <button onclick="showArabic()">العربية</button>
-    <button class="extra-btn" onclick="extraFunction()">Extra Button</button>
-</div>
 
 <div class="container" id="english-content">
     <h1>Mostafa Emad Salah Hamdy</h1>
@@ -134,60 +121,6 @@
     </ul>
 </div>
 
-<div class="container arabic hidden" id="arabic-content">
-    <h1>مصطفى عماد صلاح حمدي</h1>
-    <p><strong>العنوان:</strong> الجيزة، حدائق الأهرام، مصر</p>
-    <p><strong>البريد الإلكتروني:</strong> mommm93205@gmail.com</p>
-    <p><strong>رقم الهاتف:</strong> +201061014803</p>
-    <p><strong>تاريخ الميلاد:</strong> 9 مارس 2005</p>
-
-    <h2>التعليم</h2>
-    <ul>
-        <li>التحق حاليًا بكلية العلوم الصحية، جامعة مصر للعلوم والتكنولوجيا (MUST)</li>
-    </ul>
-
-    <h2>الشهادات والدورات</h2>
-    <ul>
-        <li>ISO 45001/2018: نظام إدارة السلامة والصحة المهنية</li>
-        <li>المؤتمر الدولي الثالث للتكنولوجيا الحيوية، جامعة ماست</li>
-        <li>مقدمة عن الهيدروجين الأخضر والأمونيا الخضراء، الجمعية البيئية بعين (افتراضي، يوليو 2024)</li>
-        <li>شهادة إتمام علوم البيانات من منصة Line</li>
-        <li>Python 101: شهادة إتمام من منصة Line</li>
-        <li>دورة لغة الجسد وإتيكيت الأعمال، منصة Almentor</li>
-        <li>دورة تدريبية في التسويق الرقمي، جامعة مصر للعلوم والتكنولوجيا (MUST) 2024</li>
-    </ul>
-
-    <h2>اللغات</h2>
-    <ul>
-        <li>العربية: اللغة الأم</li>
-        <li>الإنجليزية: مستوى B2</li>
-    </ul>
-
-    <h2>المهارات</h2>
-    <ul>
-        <li>تحليل التصميم والإدارة</li>
-        <li>العمل بشكل مستقل وفي فريق</li>
-        <li>مهارات تواصل قوية</li>
-        <li>تقنيات الكمبيوتر والذكاء الاصطناعي</li>
-        <li>معرفة النظام البيئي</li>
-        <li>التسويق الرقمي</li>
-        <li>مهارات فوتوشوب وتحرير الفيديو</li>
-        <li>استخدام الذكاء الاصطناعي</li>
-    </ul>
-
-    <h2>الهوايات والاهتمامات</h2>
-    <ul>
-        <li>التسويق الرقمي</li>
-        <li>الإدارة</li>
-        <li>فوتوشوب</li>
-        <li>تحرير الفيديو</li>
-        <li>السفر</li>
-        <li>قراءة الروايات</li>
-        <li>السباحة (بالزعانف)</li>
-        <li>التوعية بتلوث البيئة</li>
-    </ul>
-</div>
-
 <div class="social-media">
     <h2>Connect with Me</h2>
     <a href="https://www.facebook.com/mommm93205/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -197,16 +130,6 @@
 </div>
 
 <script>
-    function showEnglish() {
-        document.getElementById('english-content').classList.remove('hidden');
-        document.getElementById('arabic-content').classList.add('hidden');
-    }
-
-    function showArabic() {
-        document.getElementById('english-content').classList.add('hidden');
-        document.getElementById('arabic-content').classList.remove('hidden');
-    }
-
     function extraFunction() {
         alert("Extra button clicked!"); // يمكنك تغيير هذه الوظيفة حسب الحاجة
     }
