@@ -44,7 +44,7 @@
             text-align: center;
             margin: 20px 0;
         }
-        .btn-container button {
+        button {
             padding: 10px 20px;
             margin: 5px;
             cursor: pointer;
@@ -53,9 +53,6 @@
             color: white;
             border-radius: 5px;
         }
-        .btn-container .extra-btn {
-            background-color: #28a745; /* لون مميز للزر الإضافي */
-        }
     </style>
 </head>
 <body>
@@ -63,7 +60,6 @@
 <div class="btn-container">
     <button onclick="showEnglish()">English</button>
     <button onclick="showArabic()">العربية</button>
-    <button class="extra-btn" onclick="extraFunction()">Extra Button</button> <!-- الزر الإضافي -->
 </div>
 
 <div class="container" id="english-content">
@@ -183,10 +179,6 @@
     function showArabic() {
         document.getElementById('english-content').classList.add('hidden');
         document.getElementById('arabic-content').classList.remove('hidden');
-    }
-
-    function extraFunction() {
-        alert("Extra button clicked!"); // يمكنك تغيير هذه الوظيفة حسب الحاجة
     }
 </script>
 
